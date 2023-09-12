@@ -75,6 +75,17 @@ class Zend_Pdf_Element_String extends Zend_Pdf_Element
 
 
     /**
+     * Convert PDF element to PHP type.
+     *
+     * @return string
+     */
+    public function toPhp()
+    {
+        return $this->value;
+    }
+
+
+    /**
      * Escape string according to the PDF rules
      *
      * @param string $str

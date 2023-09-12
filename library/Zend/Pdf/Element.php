@@ -131,10 +131,7 @@ abstract class Zend_Pdf_Element
      *
      * @return mixed
      */
-    public function toPhp()
-    {
-        return $this->value;
-    }
+    abstract public function toPhp();
 
     /**
      * Convert PHP value into PDF element.
